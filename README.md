@@ -3,6 +3,7 @@
 ## Instructions
 * To use this program, make sure you have installed python, scrapy, and all its dependencies
   * You can find a tutorial on how to install scrapy here: http://doc.scrapy.org/en/latest/intro/install.html
+* Clone this repository to get the code
 * IMPORTANT: Open fantasica_wiki_crawler/settings.py, and change FILES_STORE to whichever path you want to set to
 * When you are ready, open up a console/terminal, go to the fantasica_wiki_crawler folder, and type in the following command
   * scrapy crawl fantasica_wiki
