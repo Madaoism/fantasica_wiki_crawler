@@ -35,6 +35,10 @@ class FantasicaWikiCrawlerPipeline(FilesPipeline):
             old_fullpath = os.path.join(storage, info['path'])
             extension = os.path.splitext(old_fullpath)[-1]
 
+            # unable to find the original file
+            if not os.path.exists(old_fullpath):
+                continue
+
             # new name
             basename = os.path.splitext(item['file_types'][idx])[0] + extension
             dirname = item['title']
